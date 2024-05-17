@@ -12,7 +12,9 @@
         body{
             font-family: 'Roboto',sans-serif;
             background: rgb(2,0,36);
-            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); 
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+            height: 100vh;
+            background-repeat: no-repeat; 
         }
         img{
             width: 200px;
@@ -22,14 +24,17 @@
             display: flex;
             justify-content: space-between;
             padding: 10px 10px 10px 10px;
-            margin: 150px 200px 100px 300px;
+            margin: auto;
+            margin-top: 150px;
             width: 500px;
             height: 180px;
+          
             border: 5px black solid;
             background-color: beige;
         }
-        div#login:hover{
-            box-shadow: 10px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        div#Login:hover{
+            box-shadow: 10px 6px 10px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transition: 0.3s ease-in-out;
         }
         div.google img{
             width: 200px;
@@ -40,11 +45,14 @@
             size: 1.1rem;
         }
         section.header{
+            top: 0;
             background-color: rgb(36, 65, 89);
             height: 50px;
             color: white;
             display: flex;
+            width:auto;
             justify-content: space-around;
+           
         }
         div.List ul{
             display: flex;
@@ -61,13 +69,16 @@
             font-size: 1.1rem;
             color: hotpink;
         }
-        div.footer{
+        footer.footer{
             background-color: rgb(36, 70, 72);
             display: flex;
+            bottom: 0;
+            left : 0;
+            position:fixed;
             justify-content: space-between;
             height: 160px;
-            width: auto;
-            margin: 30px 20px 0px 20px;
+            width: 100vw;
+            
         }
         div.flex1 ul li{
             list-style: none;
@@ -81,7 +92,7 @@
             font-size: 1.1rem;
             color: hotpink;
         }
-        div.footer div.Title {
+        footer div.Title {
             color: darkgray;
             opacity: 0.7;
             margin: 50px 10px 50px 10px;
@@ -122,7 +133,7 @@
     </header>
    
     <form action="" method="post">              
-        <div id="Login" align="center">
+        <div id="Login" class="login" align="center">
             <div>
                 <img src="Login Flex.webp" alt="">
             </div>
@@ -144,7 +155,7 @@
         </div>
     </form>    
     <footer>
-        <div class="footer">
+        <footer class="footer">
             <div class="Title">
                 <span class="Team"><p>Made with &#128147; By PG22 </p></span>
             </div>
@@ -172,7 +183,7 @@
                     <li><a href="Terms And Conditions.html">Terms and Condition</a></li>
                 </ul>
             </div>
-        </div>
+        </footer>
     </footer>
     <div class="copyright">
         <p><a href="#">pg22@gmail.com|&copy;All rights reserved</a></p>
